@@ -1,3 +1,4 @@
+bind = "0.0.0.0:8080"
 def application(env, resp):
 	status = "200 OK"
 	headers = [("Content-type","text/plain")]
