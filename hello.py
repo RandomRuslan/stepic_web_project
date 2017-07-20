@@ -1,6 +1,5 @@
-#bind = "0.0.0.0:8080"
 def application(env, resp):
 	status = "200 OK"
 	headers = [("Content-type","text/plain")]
 	resp(status, headers)
-	return env["QUERY_STRING"].replace("&", "\n")
+	return ["It is work"] #[env["QUERY_STRING"].replace("&", "\n")]
